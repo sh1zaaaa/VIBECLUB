@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const c = require('../controllers/tournament.controller');
+const { requireAuth, requireAdmin, optionalAuth } = require('../middleware/auth.middleware');
+router.get('/', optionalAuth, c.list);
+router.delete('/admin/:id', requireAuth, requireAdmin, c.adminDelete);
+router.post('/admin', requireAuth, requireAdmin, c.adminCreate);
+router.patch('/admin/:id/status', requireAuth, requireAdmin, c.adminStatus);
+router.get('/admin/:id/entries', requireAuth, requireAdmin, c.adminEntries);
+router.delete('/admin/:id/entries/:userId', requireAuth, requireAdmin, c.removeEntry);
+router.post('/:id/join', requireAuth, c.join);
+module.exports = router;

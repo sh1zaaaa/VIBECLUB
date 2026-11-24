@@ -1,0 +1,13 @@
+const router = require('express').Router();
+const c = require('../controllers/booking.controller');
+const { requireAuth, requireAdmin } = require('../middleware/auth.middleware');
+router.get('/inventory', c.inventory);
+router.get('/availability', requireAuth, c.availability);
+router.post('/', requireAuth, c.create);
+router.get('/mine', requireAuth, c.mine);
+router.patch('/:id/cancel', requireAuth, c.cancelMine);
+router.get('/admin', requireAuth, requireAdmin, c.adminList);
+router.patch('/admin/:id/status', requireAuth, requireAdmin, c.adminStatus);
+router.get('/admin/computers', requireAuth, requireAdmin, c.adminComputers);
+router.patch('/admin/computers/:id/status', requireAuth, requireAdmin, c.adminComputerStatus);
+module.exports = router;

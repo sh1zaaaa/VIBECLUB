@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Турниры — VIBECLUB</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="portal-page">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="/"
+        ><span class="brand-mark">V<span>.</span></span
+        ><span class="brand-name"
+          >VIBE<span>CLUB</span><small>GAMING ARENA</small></span
+        ></a
+      >
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="/booking.html">Бронь места</a
+        ><a href="/tournaments.html">Турниры</a
+        ><a href="/admin.html" id="adminNav" class="hidden">Админ-панель ↗</a>
+      </nav>
+      <div class="header-actions">
+        <a
+          class="button button-small button-lime header-account-link"
+          href="/account.html"
+          >ЛИЧНЫЙ КАБИНЕТ ↗</a
+        >
+      </div>
+    </header>
+    <main class="portal-wrap">
+      <div class="eyebrow">COMMUNITY / COMPETE</div>
+      <h1 class="portal-title">ВРЕМЯ <span>ПОБЕЖДАТЬ.</span></h1>
+      <p class="portal-lead">
+        Выбирай турнир, регистрируйся и собирай команду. Регистрация бесплатная
+        — детали участия уточняй у администратора.
+      </p>
+      <div id="tournamentList" style="margin-top: 30px">
+        <div class="empty">Загружаем турниры…</div>
+      </div>
+    </main>
+    <script src="js/portal-common.js"></script>
+    <script src="js/tournaments.js"></script>
+  </body>
+</html>

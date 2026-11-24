@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d0b">
+  <meta name="description" content="VIBECLUB — игровая арена нового уровня. Выбирай зону, бронируй место и выходи на новый уровень.">
+  <title>VIBECLUB — Enter the game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="VIBECLUB — главная">
+      <span class="brand-mark">V<span>.</span></span>
+      <span class="brand-name">VIBE<span>CLUB</span><small>GAMING ARENA</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#zones">Зоны</a>
+      <a href="#prices">Цены</a>
+      <a href="#about">О клубе</a>
+      <a href="#events">Турниры</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-login auth-open" type="button">Личный кабинет <span>↗</span></button>
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> НЕ ПРОСТО ИГРА. ТВОЯ ТЕРРИТОРИЯ.</div>
+        <h1>ENTER<br>THE <span>GAME</span><i>.</i></h1>
+        <div class="hero-bottom">
+          <p>Твой следующий clutch начинается здесь.<br>Мощное железо. Свои люди. Правильный вайб.</p>
+          <button class="button button-lime js-auth-gate" data-next="/booking.html">Занять своё место <span class="button-arrow">↗</span></button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="hero-image-shade"></div>
+        <div class="hero-stamp"><span>PLAY</span><b>HARD</b><small>★ SINCE 2024</small></div>
+        <div class="hero-vertical">VIBECLUB / YOUR NEXT LEVEL / VIBECLUB /</div>
+        <div class="hero-index"><span>01</span> — 04</div>
+      </div>
+      <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+      <div class="hero-side-note">NO LAG. NO LIMITS.</div>
+    </section>
+
+    <div class="ticker" aria-label="VIBECLUB">
+      <div class="ticker-track">
+        <span>PLAY YOUR GAME</span><b>✳</b><span>FEEL THE VIBE</span><b>✳</b><span>OWN THE NIGHT</span><b>✳</b>
+        <span>PLAY YOUR GAME</span><b>✳</b><span>FEEL THE VIBE</span><b>✳</b><span>OWN THE NIGHT</span><b>✳</b>
+      </div>
+    </div>
+
+    <section class="section zones-section" id="zones">
+      <div class="section-heading">
+        <div>
+<div class="eyebrow"><span class="eyebrow-number">01 /</span> FIND YOUR PLAYSTYLE</div>
+<h2>CHOOSE<br>YOUR <span>ZONE</span><i>.</i></h2></div>
+        <p>От соло-каток до командных разборок.<br>Выбирай пространство под свой стиль игры.</p>
+      </div>
+
+      <div class="zone-grid">
+        <article class="zone-card zone-large">
+          <div class="zone-photo zone-photo-standard"></div>
+<div class="zone-card-overlay"></div>
+          <div class="zone-top"><span>01 / MOST POPULAR</span><span class="zone-status"><i></i> ONLINE</span></div>
+          <div class="zone-info">
+<div>
+<h3>STANDARD</h3>
+<p>Комфортная база для ежедневного grind’а.</p></div><span class="zone-price">от 120 ₽<small>/ час</small></span></div>
+          <button class="zone-arrow js-auth-gate" data-zone="standard" aria-label="Забронировать Standard">↗</button>
+        </article>
+        <article class="zone-card">
+          <div class="zone-photo zone-photo-vip"></div>
+<div class="zone-card-overlay"></div>
+          <div class="zone-top"><span>02 / PREMIUM</span><span class="zone-status"><i></i> ONLINE</span></div>
+          <div class="zone-info">
+<div>
+<h3>VIP ROOM</h3>
+<p>Больше приватности. Больше комфорта.</p></div><span class="zone-price">от 220 ₽<small>/ час</small></span></div>
+          <button class="zone-arrow js-auth-gate" data-zone="vip-room" aria-label="Забронировать VIP">↗</button>
+        </article>
+        <article class="zone-card">
+          <div class="zone-photo zone-photo-bootcamp"></div>
+<div class="zone-card-overlay"></div>
+          <div class="zone-top"><span>03 / TEAM MODE</span><span class="zone-status"><i></i> ONLINE</span></div>
+          <div class="zone-info">
+<div>
+<h3>BOOTCAMP</h3>
+<p>Собирай состав. Тренируй синергию.</p></div><span class="zone-price">от 180 ₽<small>/ час</small></span></div>
+          <button class="zone-arrow js-auth-gate" data-zone="bootcamp" aria-label="Забронировать Bootcamp">↗</button>
+        </article>
+        <article class="zone-card">
+          <div class="zone-photo zone-photo-console"></div>
+<div class="zone-card-overlay"></div>
+          <div class="zone-top"><span>04 / CONSOLE</span><span class="zone-status"><i></i> ONLINE</span></div>
+          <div class="zone-info">
+<div>
+<h3>PS5 ZONE</h3>
+<p>Большой экран. Большие эмоции.</p></div><span class="zone-price">от 250 ₽<small>/ час</small></span></div>
+          <button class="zone-arrow js-auth-gate" data-zone="ps5-zone" aria-label="Забронировать PS5">↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="spec-strip" id="about">
+      <div class="spec-intro">
+<div class="eyebrow">02 / BUILT FOR VICTORY</div>
+<h2>YOUR SETUP.<br><span>YOUR RULES.</span></h2>
+<p>Каждая деталь настроена, чтобы ничто не отвлекало от игры.</p></div>
+      <div class="spec-item"><strong>240<span>Hz</span></strong><small>МОНИТОРЫ</small>
+<p>Плавность каждого движения</p></div>
+      <div class="spec-item"><strong>RTX<span>40</span></strong><small>GRAPHICS</small>
+<p>Мощность для high settings</p></div>
+      <div class="spec-item"><strong>0<span>ms</span></strong><small>VIBE CHECK</small>
+<p>Только быстрый отклик</p></div>
+    </section>
+
+    <section class="section prices-section" id="prices">
+      <div class="section-heading">
+        <div>
+<div class="eyebrow"><span class="eyebrow-number">03 /</span> PICK YOUR TIME</div>
+<h2>TIME TO<br><span>PLAY</span><i>.</i></h2></div>
+        <p>Честные тарифы и пакеты для тех,<br>кто знает цену хорошей катке.</p>
+      </div>
+      <div class="price-toolbar">
+        <div class="price-tabs" role="tablist" aria-label="Период тарифа">
+          <button class="price-tab is-active" data-period="weekday" role="tab" aria-selected="true">ПН–ПТ</button>
+          <button class="price-tab" data-period="weekend" role="tab" aria-selected="false">СБ–ВС</button>
+        </div>
+      </div>
+      <div class="price-grid">
+        <article class="price-card"><span class="price-label">QUICK MATCH</span>
+<h3>1 ЧАС</h3>
+<div class="price-value" data-weekday="120" data-weekend="150">120 <small>₽</small></div>
+<p>Размяться и залететь в игру.</p><button class="price-link js-auth-gate" data-hours="1">ВЫБРАТЬ <span>↗</span></button></article>
+        <article class="price-card price-featured">
+<div class="popular-tag">PLAYER’S CHOICE</div><span class="price-label">BEST VALUE</span>
+<h3>5 ЧАСОВ</h3>
+<div class="price-value" data-weekday="500" data-weekend="600">500 <small>₽</small></div>
+<p>Для тех, кто пришёл за результатом.</p><button class="price-link js-auth-gate" data-hours="5">ВЫБРАТЬ <span>↗</span></button></article>
+        <article class="price-card"><span class="price-label">LONG SESSION</span>
+<h3>10 ЧАСОВ</h3>
+<div class="price-value" data-weekday="—" data-weekend="900">— <small>₽</small></div>
+<p>Ночь принадлежит тебе.</p><button class="price-link js-auth-gate" data-hours="10">ВЫБРАТЬ <span>↗</span></button></article>
+      </div>
+    </section>
+
+    <section class="arena-banner">
+      <div class="arena-banner-bg"></div>
+      <div class="arena-banner-content">
+<div class="eyebrow"><span class="live-dot"></span> THIS IS YOUR ARENA</div>
+<h2>GOOD VIBES.<br><span>GREAT GAMES.</span></h2>
+<p>Приходи один. Уходи частью команды.</p><button class="button button-lime js-auth-gate" data-next="/booking.html">ПОЙМАТЬ СВОЙ VIBE <span>↗</span></button></div>
+      <div class="banner-coordinate">55°45' N / 37°37' E</div>
+    </section>
+
+    <section class="section events-section" id="events">
+      <div class="section-heading">
+        <div>
+<div class="eyebrow"><span class="eyebrow-number">04 /</span> COMMUNITY FIRST</div>
+<h2>WHAT’S<br><span>HAPPENING</span><i>?</i></h2></div>
+        <a class="text-link js-auth-gate" data-next="/tournaments.html">ВСЕ ТУРНИРЫ <span>↗</span></a>
+      </div>
+      <div id="homeEvents">
+<div class="event-row">
+<div class="event-main">
+<h3>ЗАГРУЖАЕМ СОБЫТИЯ…</h3></div></div></div>
+    </section>
+
+    <section class="final-cta" id="account">
+      <div class="cta-cross">✳</div>
+<div class="eyebrow">YOUR NEXT MATCH STARTS HERE</div>
+<h2>READY.<br><span>SET.</span> VIBE.</h2>
+      <button class="button button-dark js-auth-gate" data-next="/booking.html">ЗАБРОНИРОВАТЬ МЕСТО <span>↗</span></button>
+      <p>ТВОЯ ИГРА. ТВОИ ПРАВИЛА. VIBECLUB.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark">V<span>.</span></span><span class="brand-name">VIBE<span>CLUB</span><small>GAMING ARENA</small></span></a>
+    <span class="footer-copy">© <span id="year"></span> VIBECLUB. ALL RIGHTS RESERVED.</span>
+    <div class="footer-links"><a href="#top">VK ↗</a><a href="#top">TELEGRAM ↗</a><a href="mailto:hello@vibeclub.example">CONTACT ↗</a></div>
+  </footer>
+
+
+  <dialog class="booking-dialog auth-dialog" id="authDialog" aria-labelledby="authTitle">
+    <button class="dialog-close auth-close" aria-label="Закрыть">×</button>
+    <div class="eyebrow"><span class="live-dot"></span> VIBECLUB PLAYER ACCESS</div>
+    <h2 id="authTitle">PLAYER<br><span>ACCESS.</span></h2>
+    <div class="auth-tabs" role="tablist" aria-label="Режим авторизации">
+      <button type="button" class="auth-tab is-active" data-auth-mode="login" role="tab" aria-selected="true">ВХОД</button>
+      <button type="button" class="auth-tab" data-auth-mode="register" role="tab" aria-selected="false">РЕГИСТРАЦИЯ</button>
+    </div>
+    <form id="authForm">
+      <label id="authNameLabel" hidden>ТВОЁ ИМЯ<input name="name" autocomplete="name" minlength="2" maxlength="60" placeholder="Никнейм / имя"></label>
+      <label>EMAIL<input name="email" type="email" autocomplete="email" maxlength="254" placeholder="player@example.com" required></label>
+      <label id="authPhoneLabel" hidden>ТЕЛЕФОН<input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+7 (___) ___-__-__"></label>
+      <label>ПАРОЛЬ<input name="password" type="password" autocomplete="current-password" minlength="8" maxlength="72" placeholder="Минимум 8 символов" required></label>
+      <button class="button button-lime" type="submit" id="authSubmit">ВОЙТИ В АККАУНТ <span>↗</span></button>
+    </form>
+    <p class="auth-message" id="authMessage" aria-live="polite"></p>
+    <section class="auth-profile" id="authProfile" hidden>
+<p class="auth-profile-kicker">PLAYER CARD / ACTIVE</p>
+<h3 id="profileName"></h3>
+<p id="profileEmail"></p>
+<span id="profileRole"></span>
+<div class="profile-actions">
+  <a class="button button-lime" href="/account.html">Открыть личный кабинет ↗</a>
+  <button class="button profile-logout" type="button" id="logoutButton">ВЫЙТИ ИЗ АККАУНТА</button>
+</div>
+</section>
+  </dialog>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/home-events.js"></script>
+</body>
+</html>
